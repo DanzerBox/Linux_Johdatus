@@ -48,49 +48,48 @@
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2 color=red>ODOTA, ETTÄ SIVUSTO PÄIVITTYY!!!</h2>
+      <h2 color="red">ODOTA, ETTÄ SIVUSTO PÄIVITTYY!!!</h2>
 	  <h2>Tehtävä 3.1 Komentorivin käyttö </h2>
       <h5>Tehtävä suoritettu, 21.04.2021</h5>
-      <img src="Asennus_VirtualBox.jpg" class="fakeimg"  >Asensin VirtualBoxin.</img>
-      <p>VirtualBox oli minulla jo asenettuna, joten tästä kuvasta näkee vain
-	  kuinka se asennetaan Windowsille. VirtualBoxin asennus on suht helppoa ja
-ohjeita löytää helposti.	  </p>
-	    <img src="LinuxMINT_20.jpg" class="fakeimg" >Asensin Linux Mint 20.</img>
-      <p>Valitsin uusimman Linux Mint 20 Ulyana, joka on 64-bit Cinnamon versio
-koko (7,34GB).	  </p>
-	   <img src="Linux_VirtualBox.jpg" class="fakeimg" >Avasin Linux Mint 20.</img>
-      <p>Sitten kun saa avattua VirtualBoxin, avataan vaan "NEW" kohdasta ja valitaan 
-asetuksista Linuxin ja Ubuntu 64-bit, sillä Mint on Ubuntu pohjainen. Myöhemmin valitsee
-se ladattu VDI tiedosto niin se asentaa Mint:in heti päälle.  </p>
-	  <img src="LinuxMINT_auki.jpg" class="fakeimg" >Käynnistin Linux Mint 20.</img>
-      <p>Linux Mint lähti mainiosti käyntiin ja kirjautuminen onnistui ongelmitta.  </p>
-	  <img src="toimiva_linux.jpg" class="fakeimg" >Kokeilin Linux Mint 20.</img>
-      <p>Linux Mint toimii tosi hyvin, sain siihen valmiiksi ladattua Firefox selaimen ja 
-	  esim. nettiselailu toimii hyvin, kuvassa Laurean sivustot auki. Command toimii niinkuin pitääkin. Heti 
-huomaa, että Mint on mahdollisimman lähellä Windowsia ulkonäöltään ja eroja Windowsista näkee aluksi
-vähemmän.</p>
-	  <p>Tehtävä B)</p><img src="bodhi_linux_asennus.jpg" class="fakeimg" >Asensin Linux Bodhi 5.0.</img>
-      <p>Viides versio Linux Bodhi 64-bit tuli asenettua ja sen koko oli 
-(3,05GB).</p>
-	  <img src="toimiva_bodhi.jpg" class="fakeimg" > Käynnistin Linux Bodhi.</img>
-      <p>Linux Bodhi on myös Ubuntu pohjainen, eli toimii tosi hyvin ja se käynnistyi huomattavasti nopeammin kuin Mint.</p>
-	   <img src="nopea_bodhi.jpg" class="fakeimg" >Kokeilin Linux Bodhi.</img>
-      <p>Heti alkuun huomasin kuinka Linux Bodhi on nopea, kaikki ohjelmat ja jopa sama selain toimii
-	  varmaan kaksi kertaa nopeammin kuin Mint. Tässä versiossa tulee huomattavasti vähemmän resursseja käytettyä.
-	  </p>
+      <img src="teema3_teht1.png" class="fakeimg"  >1. Komentojen putkitus ja yhdistely.</img>
+      <p>a) cat /var/log/syslog | wc -l  (jos syslog nimistä tiedostoa ei löydy, voit käyttää jotain toista tekstitiedostoa, tai luoda sellaisen itse)
+b) ls -l  | sort -r |  more
+c) ls | head -3 | tail -1 > myoutput	  </p>
+	    <img src="teema3_teht2.A.png" class="fakeimg" >2. Tiedostojen etsiminen.</img>
+      <p>a) Miten etsisit locate -komennolla kaikkia tietokoneen mp3 -päätteisiä tiedostoja ?</p>
+	  
+	   <img src="teema3_teht2.B.png" class="fakeimg" >2. Tiedostojen etsiminen.</img>
+      <p>b) Miten etsisit find-komennolla tiedostoja, joita on muokattu tänään? </p>
+	  
+	  <img src="teema3_teht2.C.png" class="fakeimg" >2. Tiedostojen etsiminen.</img>
+      <p>c) Miten etsisit tietokoneesta yli 10 Megatavun kokoisia tiedostoja?  </p>
+	  
+	  <img src="teema3_teht3.png" class="fakeimg" >3. Tiedostojen pakkaaminen ja purkaminen.</img>
+      <p>a) Pakkaa kotihakemistosi kaikkine alihakemistoineen tar.gz –pakettiin
+b) Tee sama xz - pakkausohjelmalla, mutta älä sisällytä äsken luomaasi gz-pakettia mukaan. 
+c) Vertaa tiedostojen kokoa, paljonko niillä on eroa? Vinkki: kokeile tiedoston koon 
+tulostusta selväkielisenä komennolla “ls -lh” tai kokeile  “stat -c” komentoa.</p>
+	  <img src="teema3_teht4.png" class="fakeimg" >4. Tiedostojen ja hakemistojen oikeudet.</img>
+      <p>Muuta tiedoston oikeuksia siten, että kaikilla on oikeus lukea ja kirjoittaa sitä. 
+	  Esitä ratkaisu sekä kirjain- että  numeromuotoista komentoa käyttäen.
+Miten poistaisit kohdan a tiedostolta kirjoitusoikeudet kaikilta? Lukuoikeudet saavat jäädä.
+Esitä ratkaisu sekä kirjain- että  numeromuotoista komentoa käyttäen.
+Luo hakemisto ja anna kaikille lukuoikeus sinne, mutta vain omistajalla tulisi olla kirjoitus ja suoritusoikeus siihen.  
+Esitä ratkaisu sekä kirjain- että  numeromuotoista komentoa käyttäen.
+</p>
   
     </div>
     <div class="card">
-      <h2>2.2 Tutustuminen Graafiseen käyttöliittymään </h2>
-      <h5>Tehtävä suoritettu, 31.03.2021</h5>
+      <h2>Tehtävä 3.2 Komentorivityökaluja: GREP, SED, AWK  </h2>
+      <h5>Tehtävä suoritettu, 21.04.2021</h5>
       <img src="teht2.2.jpg" class="fakeimg"  >Testaaminen.</img>
       <p>VirtualBoxilla tuli hyvin testattua sekä, Mint, että Bodhi ja asetuksien säätäminen
 onnistuu ihan näppärästi, sillä muistuttavat hyvin Windowsia ja MacOSia. </p>
 	   
     </div>
 	 <div class="card">
-      <h2>Tehtävä 2.3 Vaihtoehtoisia asennustapoja</h2>
-      <h5>Tehtävä suoritettu, 31.03.2021</h5>
+      <h2>Tehtävä 3.3 Komentorivin muokkaus ja ohjelmointi.</h2>
+      <h5>Tehtävä suoritettu, 21.04.2021</h5>
       <img src="AzureLab_1.jpg" class="fakeimg"  >A. Linux Azure-pilvessä</img>
       <p>Azure aukesi ihan hyvin, mutta käynnistys kesti useita minuutteja.
 Yllättävän hidas järjestelmä. </p>
@@ -104,7 +103,7 @@ Yllättävän hidas järjestelmä. </p>
 	  </p>
 	   <img src="puppy_linux_rufus2.jpg" class="fakeimg" >B. Linux USB-tikulle </img>
       <p>Asennus vaiheessa odottelin tikun ylikirjoittamista.</p>
-	   <img src="puppy_linux_tikulla.jpg" class="fakeimg" >B. Linux USB-tikulle </img>
+	   <img src="teema3_teht4.png" class="fakeimg" >B. Linux USB-tikulle </img>
       <p>Asennus onnistui, nyt muistitikullani on Puppy Linux. Toimivuus on hyvin perinteinen,
 	  omalla työkoneella en aio käynnistää, sillä se on henkilökohtainen ja toimii päivittäin ihan kuin serveri 24/7.
 	  Jos olisi laitteisto mitä voisi uhrata kokeiluun, niin siitä vain lähtisin kokeilemaan, mutta linux asentaminen ei ole uusi juttu
