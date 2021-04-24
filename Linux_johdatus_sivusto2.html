@@ -48,29 +48,31 @@
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2 color="red">ODOTA, ETTÄ SIVUSTO PÄIVITTYY!!!</h2>
+      <h5>(teema 3 aihealueista oli liian vähän ohjeita, joten kävi miten kävi.
+	  Logiikka joten kuten ymmärretty.)</h5>
 	  <h2>Tehtävä 3.1 Komentorivin käyttö </h2>
       <h5>Tehtävä suoritettu, 21.04.2021</h5>
       <img src="teema3_teht1.png" class="fakeimg"  >1. Komentojen putkitus ja yhdistely.</img>
-      <p>a) cat /var/log/syslog | wc -l  (jos syslog nimistä tiedostoa ei löydy, voit käyttää jotain toista tekstitiedostoa, tai luoda sellaisen itse)
-b) ls -l  | sort -r |  more
-c) ls | head -3 | tail -1 > myoutput	  </p>
+      <p>a) luodaan syslog komennolla echo kohdennetaan se kansioon.
+b) ls -l  | sort -r |  more järjestetään syslog komento.
+c) ls | head -3 | tail -1 > myoutput muutetaan järjestyksen päänimestä ja sen perästä.	  </p>
 	    <img src="teema3_teht2.A.png" class="fakeimg" >2. Tiedostojen etsiminen.</img>
-      <p>a) Miten etsisit locate -komennolla kaikkia tietokoneen mp3 -päätteisiä tiedostoja ?</p>
+      <p>Kuvassa oheinen komentopätkä. a) Miten etsisit locate -komennolla kaikkia tietokoneen mp3 -päätteisiä tiedostoja ?</p>
 	  
 	   <img src="teema3_teht2.B.png" class="fakeimg" >2. Tiedostojen etsiminen.</img>
-      <p>b) Miten etsisit find-komennolla tiedostoja, joita on muokattu tänään? </p>
+      <p>Kuvassa oheinen komentopätkä. b) Miten etsisit find-komennolla tiedostoja, joita on muokattu tänään? </p>
 	  
 	  <img src="teema3_teht2.C.png" class="fakeimg" >2. Tiedostojen etsiminen.</img>
-      <p>c) Miten etsisit tietokoneesta yli 10 Megatavun kokoisia tiedostoja?  </p>
+      <p>Kuvassa oheinen komentopätkä. c) Miten etsisit tietokoneesta yli 10 Megatavun kokoisia tiedostoja?  </p>
 	  
 	  <img src="teema3_teht3.png" class="fakeimg" >3. Tiedostojen pakkaaminen ja purkaminen.</img>
       <p>a) Pakkaa kotihakemistosi kaikkine alihakemistoineen tar.gz –pakettiin
 b) Tee sama xz - pakkausohjelmalla, mutta älä sisällytä äsken luomaasi gz-pakettia mukaan. 
-c) Vertaa tiedostojen kokoa, paljonko niillä on eroa? Vinkki: kokeile tiedoston koon 
-tulostusta selväkielisenä komennolla “ls -lh” tai kokeile  “stat -c” komentoa.</p>
+c) Vertaa tiedostojen kokoa, paljonko niillä on eroa? ero ei ole kovin suuri sillä paketoitu materiaali
+on hieman pieni pakattavaksi.</p>
 	  <img src="teema3_teht4.png" class="fakeimg" >4. Tiedostojen ja hakemistojen oikeudet.</img>
-      <p>Muuta tiedoston oikeuksia siten, että kaikilla on oikeus lukea ja kirjoittaa sitä. 
+      <p>Kuvassa oheinen komentopätkä. Kaikki numerot vastaavat luku, kirjoitus ja suoritus komennon mukaan. 
+	  Muuta tiedoston oikeuksia siten, että kaikilla on oikeus lukea ja kirjoittaa sitä. 
 	  Esitä ratkaisu sekä kirjain- että  numeromuotoista komentoa käyttäen.
 Miten poistaisit kohdan a tiedostolta kirjoitusoikeudet kaikilta? Lukuoikeudet saavat jäädä.
 Esitä ratkaisu sekä kirjain- että  numeromuotoista komentoa käyttäen.
@@ -82,36 +84,33 @@ Esitä ratkaisu sekä kirjain- että  numeromuotoista komentoa käyttäen.
     <div class="card">
       <h2>Tehtävä 3.2 Komentorivityökaluja: GREP, SED, AWK  </h2>
       <h5>Tehtävä suoritettu, 21.04.2021</h5>
-      <img src="teht2.2.jpg" class="fakeimg"  >Testaaminen.</img>
-      <p>VirtualBoxilla tuli hyvin testattua sekä, Mint, että Bodhi ja asetuksien säätäminen
-onnistuu ihan näppärästi, sillä muistuttavat hyvin Windowsia ja MacOSia. </p>
+      <img src="teema3_grep1.png" class="fakeimg"  >GREP.</img>
+      <p>a)Jos ei oteta huomioon kuva, vaan teksti millä saa ohjelman pyörimään niin,
+	  grep -i 'bar' file1
+	 kaava toimii.</p>
+	   <img src="teema3_grep2.png" class="fakeimg" ></img>
+      <p>Kuvassa oheinen komentopätkä tehtävään. c) Miten etsisit tietokoneesta yli 10 Megatavun kokoisia tiedostoja?  </p>
+	   <img src="teema3_awk.png" class="fakeimg" >AWK</img>
+      <p>Oli täysin mahdotonta kopioida toiseen käyttöjärjestelmään CSV tiedosto, joko leikepöydältä CSV muotoinen datasetti. "Tiedosto rakentuu sarakkeista, joissa jokaiseen tallennetaan
+tiettyjä tietoja käyttäjästä. Kentät on erotettu puolipisteellä. Kopioi data tekstitiedostoon omalle
+Linux-koneellesi."  </p>
+	   <img src="teema3_sed.png" class="fakeimg" ></img>
+      <p> SEDin käyttö oli mennyt sen verran pieleen, ettei mitään tiedostoja voinut löytää. </p>
+	    <img src="teema3_wc.png" class="fakeimg" ></img>
+      <p>Tietyn tekstin osio ja sen numerointi löytyi, mutta järjestystavu oli jäänyt epäselväksi.</p>
+
+. </p>
 	   
     </div>
 	 <div class="card">
       <h2>Tehtävä 3.3 Komentorivin muokkaus ja ohjelmointi.</h2>
       <h5>Tehtävä suoritettu, 21.04.2021</h5>
-      <img src="AzureLab_1.jpg" class="fakeimg"  >A. Linux Azure-pilvessä</img>
-      <p>Azure aukesi ihan hyvin, mutta käynnistys kesti useita minuutteja.
-Yllättävän hidas järjestelmä. </p>
- <img src="Azure_rikkoo.jpg" class="fakeimg"  >A. Linux Azure-pilvessä</img>
-      <p>Azure komento koodin kanssa oli sellaista tappelua, ettei tee mieli ollenkaan työskennellä azuren
-	  virtual machinen kanssa. Koneeni ei tykkää etäyhteydestä, eikä reagoinut sen enempää kun lähti etäyhteys käyntiin.
-	  Turhaan tuli tuhlattua useita tunteja komentopohjan korjaamisen yhteydessä. En suosittele. </p>
-	    <img src="puppy_linux_rufus.jpg" class="fakeimg" >B. Linux USB-tikulle </img>
-      <p>Latasin USB tikulle RUFUS ohjelman kautta Ubuntu pohjainen Puppy-Linuxin. Koska 
-	  se on pienin tiedostokooltaan, myös uskalsin nyt uhrata tikultani tärkeätä tietoa.
-	  </p>
-	   <img src="puppy_linux_rufus2.jpg" class="fakeimg" >B. Linux USB-tikulle </img>
-      <p>Asennus vaiheessa odottelin tikun ylikirjoittamista.</p>
-	   <img src="teema3_teht4.png" class="fakeimg" >B. Linux USB-tikulle </img>
-      <p>Asennus onnistui, nyt muistitikullani on Puppy Linux. Toimivuus on hyvin perinteinen,
-	  omalla työkoneella en aio käynnistää, sillä se on henkilökohtainen ja toimii päivittäin ihan kuin serveri 24/7.
-	  Jos olisi laitteisto mitä voisi uhrata kokeiluun, niin siitä vain lähtisin kokeilemaan, mutta linux asentaminen ei ole uusi juttu
-	  millään tavalla muutenkaan. Joten tehtävä on suoritettu.
-	  <p>C. BONUS: Linuxin asentaminen Windowsin rinnalle (Bonus-pisteitä 3 p.)
-	  Hullu en ole, kuka sellaista lähtee tekemään ellei töiden vuoksi tehnyt sen jo ennestään?!</p>
-	  </p>
-    </div>
+      <img src="teema3_komentorivi.png" class="fakeimg"  >Komentoriviohjelmointi</img>
+      <p>Kuvassa on esimerkit siitä miten skriptin toimintaa toteutetaan. </p>
+	   <img src="teema3_komentorivi2.png" class="fakeimg"  >Komentoriviohjelmointi</img>
+      <p>Kuvassa on esimerkit siitä miten skriptin toimintaa toteutetaan. </p>
+   
+   </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
